@@ -1,0 +1,75 @@
+module.exports.config = {
+	name: "join",
+	eventType: ["log:subscribe"],
+	version: "1.0.1",
+	credits: "Deku",
+	description: "Notify bots or people entering the group",
+	dependencies: {
+		"fs-extra": ""
+	}
+};
+module.exports.run = async function({ api, event }) {
+const request = require("request");
+	const { threadID } = event;
+	if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
+		api.changeNickname(`» ${global.config.PREFIX} « ${(!global.config.BOTNAME) ? " " : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
+		return api.sendMessage(`${global.config.BOTNAME} Connected successfully!
+Thank you for choosing ${global.config.BOTNAME} bot, have fun using it.`, threadID);
+  api.sendMessage({sticker: 958510944241784}, threadID);
+	}
+	else {
+		try {
+    const request = require("request");
+			const fs = global.nodemodule["fs-extra"];
+			let { threadName, participantIDs, imageSrc } = await api.getThreadInfo(threadID);
+const moment = require("moment-timezone");
+      var time = moment.tz("Asia/Ho_Chi_Minh").format("DD/MM/YYYY || HH:mm:s || (dddd)");
+      var hours = moment.tz("Asia/Ho_Chi_Minh").format("HH");
+var threadInfo = await api.getThreadInfo(threadID);
+      const uid = (event.logMessageData.leftParticipantFbId);
+			const threadData = global.data.threadData.get(parseInt(threadID)) || {};		
+			var mentions = [], nameArray = [], memLength = [], i = 0;
+    let addedParticipants1 = event.logMessageData.addedParticipants;
+        for (let newParticipant of addedParticipants1) {
+   let userID = newParticipant.userFbId
+api.getUserInfo(parseInt(userID), (err, data) => {
+      if(err){ return console.log(err)}
+     var obj = Object.keys(data);
+  var tite = ["https://i.imgur.com/oeyVcRU.jpg", "https://i.imgur.com/qDG55dz.jpg", "https://i.imgur.com/4GGnm3O.jpg", "https://i.imgur.com/cak3TM4.jpg"];
+  
+  var linkava1 = tite[Math.floor(Math.random() * tite.length)];
+     var linkava = ["https://i.imgur.com/EsQBZY4.jpg"];
+    var userName = data[obj].name.replace("@", "");
+  if (userID !== api.getCurrentUserID()) {  
+				nameArray.push(userName);
+				mentions.push({ tag: userName, id: userID, fromIndex: 0 });
+memLength.push(participantIDs.length - i++);
+memLength.sort((a, b) => a - b);
+(typeof threadData.customJoin == "undefined") ? msg = "‎⎔ 𝐓𝐡𝐨̂𝐧𝐠 𝐁𝐚́𝐨 ⎔\n➾ 𝐁𝐚̂𝐲 𝐆𝐢𝐨̛̀ 𝐋𝐚̀: {time}\n➾ 𝐗𝐢𝐧 𝐂𝐡𝐚̀𝐨 𝐌𝐮̛̀𝐧𝐠 𝐓𝐡𝐚̀𝐧𝐡 𝐕𝐢𝐞̂𝐧 𝐌𝐨̛́𝐢 𝐂𝐮̉𝐚 𝐂𝐡𝐮́𝐧𝐠 𝐓𝐚 !!!\n▭▭▭▭ [ 𝐈𝐍𝐅𝐎 ] ▭▭▭▭\n⋄ 𝐍𝐚𝐦𝐞: {uName} \n⋄ 𝐔𝐫𝐥 𝐅𝐁: https://www.facebook.com/{iduser}\n⋄ 𝐁𝐚̣𝐧 𝐀̂́𝐲 𝐋𝐚̀ 𝐓𝐡𝐚̀𝐧𝐡 𝐕𝐢𝐞̂𝐧 𝐒𝐨̂́ {soThanhVien} 𝐂𝐮̉𝐚 {threadName} !!\n⋄ 𝐂𝐡𝐮́𝐜 {uName} 𝐁𝐮𝐨̂̉𝐢 {session} 𝐕𝐮𝐢 𝐕𝐞̉ 𝐌𝐨𝐚𝐡𝐡 🍒\n▭▭▭▭▭▭▭▭▭▭▭▭\n◈ {uName} 𝐕𝐚̀𝐨 𝐍𝐡𝐨́𝐦 𝐁𝐨̛̉𝐢 𝐋𝐨̛̀𝐢 𝐌𝐨̛̀𝐢 𝐂𝐮̉𝐚 \n◈ 𝐔𝐫𝐥 𝐅𝐁: https://www.facebook.com/{idauthor}\n𝐁𝐚̣𝐧 𝐤𝐡𝐨̂𝐧𝐠 𝐭𝐮̛𝐨̛𝐧𝐠 𝐭𝐚́𝐜 𝐛𝐚̣𝐧 𝐬𝐞̃ 𝐫𝐚 đ𝐚̉𝐨 𝐨̛̉ 🍀" : msg = threadData.customJoin;
+			msg = msg
+         .replace(/\{idauthor}/g, event.author)
+        .replace(/\{iduser}/g, uid)
+        .replace(/\{session}/g, hours <= 10 ? "𝘀𝗮́𝗻𝗴" : 
+    hours > 10 && hours <= 12 ? "𝘁𝗿𝘂̛𝗮" :
+    hours > 12 && hours <= 18 ? "𝗰𝗵𝗶𝗲̂̀𝘂" : "𝘁𝗼̂́𝗶 ")
+    .replace(/\{time}/g, time)
+			.replace(/\{uName}/g, nameArray.join(', '))
+			.replace(/\{type}/g, (memLength.length > 1) ?  'you' : 'Friend')
+			.replace(/\{soThanhVien}/g, memLength.join(', '))
+			.replace(/\{threadName}/g, threadName);			
+var random1 = [`https://api.reikomods.repl.co/canvas/welcome2?uid=${userID}&name=>»»»»${userName}&bg=${linkava1}&namegc=${threadName}&member=${participantIDs.length}`, `https://api.reikomods.repl.co/canvas/welcome?uid=${userID}&name=${userName}&bg=https://i.imgur.com/mlL0nIF.jpg&namegc=${threadName}&member=${participantIDs.length}`];
+  var randomm = random1[Math.floor(Math.random() * random1.length)];    
+	let callback = function () {
+	 return api.sendMessage({body: msg, attachment: fs.createReadStream(__dirname + `/cache/come.jpg`), mentions
+                    }, event.threadID, () => fs.unlinkSync(__dirname + `/cache/come.jpg`));
+   
+                };
+                request(encodeURI(randomm)).pipe(fs.createWriteStream(__dirname + `/cache/come.jpg`)).on("close", callback);
+     }
+})
+        }
+    }catch (err) {
+            return console.log("ERROR: "+err);
+    }
+	}
+                           }

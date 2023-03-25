@@ -1,0 +1,71 @@
+ const axios = require("axios");
+const fs = require("fs");
+module.exports.config = {
+    name: "capv2",
+    version: "1.0.0",
+    hasPermssion: 0,
+    credits: "Thiệu Trung Kiên",
+    description: "Chụp ảnh profile của người dùng",
+    commandCategory: "THÀNH VIÊN",
+    usages: "",
+    cooldowns: 5
+}
+module.exports.handleEvent = async ({ api, event, Threads, args, Users }) => {
+  try{
+  if(event.body.toLowerCase() == "cap"){
+    const name = await Users.getNameUser(event.senderID)
+    api.sendMessage(`Đợi tý đi ${name}!!`, event.threadID, event.messageID);
+    if (event.type == "message_reply") {
+      var uid = event.messageReply.senderID;
+    } else if (Object.keys(event.mentions).length == 1) {
+      var uid = Object.keys(event.mentions)[0];
+    }
+  else {
+          var uid = event.senderID;
+    }
+    var cookies = `sb=FEx6Y48Tl9E_GzHdVFG4ozmc; vpd=v1%3B712x360x2; dpr=2; datr=ADCIY_2NZMjp7QoTBWERy-0_; locale=vi_VN; fr=0rvuP5Y8aB7O8o5vR.AWWv56jcOWN6NY91L8K2TkExeNU.BjhpWK.sJ.GOI.0.0.BjiF0P.AWXRb_ZWev4; c_user=100068094188928; xs=40%3A_5bPyvJENn6zgQ%3A2%3A1669881103%3A-1%3A8624; m_page_voice=100068094188928; fbl_cs=AhAAHwefNQOuhe5nA48nxszkGElXNj1uK1RXcHM9bm92RFZNUTRIekd1Kw; fbl_ci=816463386238797; fbl_st=101521127%3BT%3A27831352; m_pixel_ratio=2; wd=360x712; useragent=TW96aWxsYS81LjAgKExpbnV4OyBBbmRyb2lkIDExOyBWMjExMCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzEwNy4wLjAuMCBNb2JpbGUgU2FmYXJpLzUzNy4zNg%3D%3D; _uafec=Mozilla%2F5.0%20(Linux%3B%20Android%2011%3B%20V2110)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F107.0.0.0%20Mobile%20Safari%2F537.36;`,
+    vaildItems = ['sb', 'datr', 'c_user', 'xs', 'm_pixel_ratio', 'locale', 'wd', 'fr', 'presence', 'xs', 'm_page_voice', 'fbl_st', 'fbl_ci', 'fbl_cs', 'vpd', 'wd', 'fr', 'presence'];
+    var cookie = `sb=FEx6Y48Tl9E_GzHdVFG4ozmc; vpd=v1%3B712x360x2; dpr=2; datr=ADCIY_2NZMjp7QoTBWERy-0_; locale=vi_VN; fr=0rvuP5Y8aB7O8o5vR.AWWv56jcOWN6NY91L8K2TkExeNU.BjhpWK.sJ.GOI.0.0.BjiF0P.AWXRb_ZWev4; c_user=100068094188928; xs=40%3A_5bPyvJENn6zgQ%3A2%3A1669881103%3A-1%3A8624; m_page_voice=100068094188928; fbl_cs=AhAAHwefNQOuhe5nA48nxszkGElXNj1uK1RXcHM9bm92RFZNUTRIekd1Kw; fbl_ci=816463386238797; fbl_st=101521127%3BT%3A27831352; m_pixel_ratio=2; wd=360x712; useragent=TW96aWxsYS81LjAgKExpbnV4OyBBbmRyb2lkIDExOyBWMjExMCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzEwNy4wLjAuMCBNb2JpbGUgU2FmYXJpLzUzNy4zNg%3D%3D; _uafec=Mozilla%2F5.0%20(Linux%3B%20Android%2011%3B%20V2110)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F107.0.0.0%20Mobile%20Safari%2F537.36; `;
+    cookies.split(';').forEach(item => {
+        var data = item.split('=');
+        if (vaildItems.includes(data[0])) cookie += `${data[0]}=${data[1]};`;
+    });
+    var url = encodeURI(encodeURI((`https://trend-trai-tim.hianime.repl.co/screenshot/${uid}/${cookie}`))),
+        path = __dirname + `/cache/${uid}.png`;
+    axios({
+        method: "GET",
+        url: `https://api.screenshotmachine.com/?key=6cfb43&url=${url}&dimension=1024x768`,
+        responseType: "arraybuffer"
+    }).then(res => {
+        fs.writeFileSync(path, Buffer.from(res.data, "utf-8"));
+        api.sendMessage({ 	body: `Ây dô xong rồi nè ${name}`,
+                         attachment: fs.createReadStream(path) }, event.threadID, () => fs.unlinkSync(path), event.messageID);
+    }).catch(err => console.log(err));
+  }
+} catch(e){
+    console.log(e)
+}}
+module.exports.run = async function ({ api,Users,event, args }) {
+  const name = await Users.getNameUser(event.senderID)
+    api.sendMessage(`Đợi tý đi ${name}!!`, event.threadID, event.messageID);
+    var uid = String(args[0]);
+    isNaN(uid) && (uid = Object.keys(event.mentions)[0], "message_reply" == event.type ? uid = event.messageReply.senderID : uid = event.senderID);
+    var cookies = `sb=FEx6Y48Tl9E_GzHdVFG4ozmc; vpd=v1%3B712x360x2; dpr=2; datr=ADCIY_2NZMjp7QoTBWERy-0_; locale=vi_VN; fr=0rvuP5Y8aB7O8o5vR.AWWv56jcOWN6NY91L8K2TkExeNU.BjhpWK.sJ.GOI.0.0.BjiF0P.AWXRb_ZWev4; c_user=100068094188928; xs=40%3A_5bPyvJENn6zgQ%3A2%3A1669881103%3A-1%3A8624; m_page_voice=100068094188928; fbl_cs=AhAAHwefNQOuhe5nA48nxszkGElXNj1uK1RXcHM9bm92RFZNUTRIekd1Kw; fbl_ci=816463386238797; fbl_st=101521127%3BT%3A27831352; m_pixel_ratio=2; wd=360x712; useragent=TW96aWxsYS81LjAgKExpbnV4OyBBbmRyb2lkIDExOyBWMjExMCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzEwNy4wLjAuMCBNb2JpbGUgU2FmYXJpLzUzNy4zNg%3D%3D; _uafec=Mozilla%2F5.0%20(Linux%3B%20Android%2011%3B%20V2110)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F107.0.0.0%20Mobile%20Safari%2F537.36; `,
+    vaildItems = ['sb', 'datr', 'c_user', 'xs', 'm_pixel_ratio', 'locale', 'wd', 'fr', 'presence', 'xs', 'm_page_voice', 'fbl_st', 'fbl_ci', 'fbl_cs', 'vpd', 'wd', 'fr', 'presence'];
+    var cookie = `sb=FEx6Y48Tl9E_GzHdVFG4ozmc; vpd=v1%3B712x360x2; dpr=2; datr=ADCIY_2NZMjp7QoTBWERy-0_; locale=vi_VN; fr=0rvuP5Y8aB7O8o5vR.AWWv56jcOWN6NY91L8K2TkExeNU.BjhpWK.sJ.GOI.0.0.BjiF0P.AWXRb_ZWev4; c_user=100068094188928; xs=40%3A_5bPyvJENn6zgQ%3A2%3A1669881103%3A-1%3A8624; m_page_voice=100068094188928; fbl_cs=AhAAHwefNQOuhe5nA48nxszkGElXNj1uK1RXcHM9bm92RFZNUTRIekd1Kw; fbl_ci=816463386238797; fbl_st=101521127%3BT%3A27831352; m_pixel_ratio=2; wd=360x712; useragent=TW96aWxsYS81LjAgKExpbnV4OyBBbmRyb2lkIDExOyBWMjExMCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzEwNy4wLjAuMCBNb2JpbGUgU2FmYXJpLzUzNy4zNg%3D%3D; _uafec=Mozilla%2F5.0%20(Linux%3B%20Android%2011%3B%20V2110)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F107.0.0.0%20Mobile%20Safari%2F537.36; `;
+    cookies.split(';').forEach(item => {
+        var data = item.split('=');
+        if (vaildItems.includes(data[0])) cookie += `${data[0]}=${data[1]};`;
+    });
+    var url = encodeURI(encodeURI((`https://trend-trai-tim.hianime.repl.co/screenshot/${uid}/${cookie}`))),
+        path = __dirname + `/cache/${uid}.png`;
+    axios({
+        method: "GET",
+        url: `https://api.screenshotmachine.com/?key=6cfb43&url=${url}&dimension=1024x768`,
+        responseType: "arraybuffer"
+    }).then(res => {
+        fs.writeFileSync(path, Buffer.from(res.data, "utf-8"));
+        api.sendMessage({ 	body: `Ây dô xong rồi nè ${name}`,
+                         attachment: fs.createReadStream(path) }, event.threadID, () => fs.unlinkSync(path), event.messageID);
+    }).catch(err => console.log(err));
+}

@@ -1,0 +1,145 @@
+module.exports.config = {
+    name: "joinNoti",
+    eventType: ["log:subscribe"],
+    version: "1.0.4",
+    credits: "Mirai Team & được mod lại by Mr.ben thành dạng ảnh canvas",
+    description: "Thông báo bot hoặc người vào nhóm",
+    dependencies: {
+        "fs-extra": ""
+    }
+};
+module.exports.onLoad = () => {
+    const fs = require("fs-extra");
+    const request = require("request");
+    const dirMaterial = __dirname + `/cache/joinmp4/`;
+    if (!fs.existsSync(dirMaterial + "cache", "joinmp4")) fs.mkdirSync(dirMaterial, { recursive: true });
+    if (!fs.existsSync(dirMaterial + "hello.mp4")) request("https://i.imgur.com/BwtUHeZ.mp4 ").pipe(fs.createWriteStream(dirMaterial + "hello.mp4"));
+																								   }
+module.exports.circle = async (image) => {
+  const jimp = global.nodemodule["jimp"];
+  image = await jimp.read(image);
+  image.circle();
+  return await image.getBufferAsync("image/png");
+								       }
+module.exports.run = async function({ api, event, Users, Threads }) {
+  const fs = require("fs");
+   var fullYear = global.client.getTime("fullYear");
+  	var getHours = await global.client.getTime("hours");
+			var session = `${getHours < 3 ? "Đêm khuya" : getHours < 8 ? "Buổi sáng" : getHours < 12 ? "Buổi trưa" : getHours < 17 ? "Buổi chiều" : getHours < 23 ? "Buổi tối" : "Đêm khuya"}`
+    const { join } = global.nodemodule["path"];
+    const { threadID } = event;
+  const { PREFIX } = global.config;
+    console.log(2)
+    if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
+        console.log(1)
+        return api.sendMessage({body:`✨🍀Chào mọi người mình là ${global.config.BOTNAME}✨🍀\n[🍀] Kết nối thành công\n [🌸] Dấu lệnh ${global.config.PREFIX} \n [⌛] Link Admin :https://m.facebook.com/profile.php?id=${global.config.ADMINBOT.join("\nhttps://m.facebook.com/profile.php?id=")}`}, event.threadID, async () => {
+            let check = true;
+            while (check) {
+                setTimeout(() => check = false, 30 * 1000);
+                const threadData = (await Threads.getInfo(threadID)) || {};
+                if (threadData.hasOwnProperty("adminIDs")) {
+                    check = false;
+                    api.sendMessage("", threadID, (err, info) => {
+                        global.client.handleReply.push({
+                            name: "langChoose_0x01042022",
+                            messageID: info.messageID,
+                            adminIDs: threadData.adminIDs
+                        });
+                    });
+                }
+            }
+            api.changeNickname(`[ ${global.config.PREFIX} ] • ${(!global.config.BOTNAME) ? "Made by CatalizCS and SpermLord" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
+          	api.sendMessage({body:`Hiện tại mình đang có ${client.commands.size} lệnh có thể sử dụng được.\nPrefix hiện tại khả dụng là: ${PREFIX}`,attachment: fs.createReadStream(__dirname + `/cache/joinmp4/hello.mp4`)}, event.threadID);
+		}); 
+	}
+    else {
+        try {
+            const { createReadStream, existsSync, mkdirSync } = global.nodemodule["fs-extra"];
+  const { loadImage, createCanvas } = require("canvas");
+  const fs = global.nodemodule["fs-extra"];
+  const axios = global.nodemodule["axios"];
+		const res = await axios.get(`https://api-vip.miraiofficials123.repl.co/images/canh`);
+		var link = res.data.data
+let threadInfo = await api.getThreadInfo(event.threadID);
+  let pathImg = __dirname + "/noprefix/join.png";
+  let pathAvt1 = __dirname + "/cache/Avtmot1.png";
+//let pathAvt2 = __dirname + "/cache/Avt2.png";
+ 
+ 
+//let pathbox = __dirname + "/cache/box.png";
+            let { threadName, participantIDs } = await api.getThreadInfo(threadID);
+ 
+            const threadData = global.data.threadData.get(parseInt(threadID)) || {};
+            const path = join(__dirname, "cache", "joinGif");
+            const pathGif = join(path, `hi.mp4`);
+ 
+            var mentions = [], nameArray = [], memLength = [], iduser = [], i = 0;
+ 
+            for (id in event.logMessageData.addedParticipants) {
+                const userName = event.logMessageData.addedParticipants[id].fullName;
+              iduser.push(event.logMessageData.addedParticipants[id].userFbId.toString());
+ 
+ 
+                nameArray.push(userName);
+                mentions.push({ tag: userName, id: event.senderID });
+                memLength.push(participantIDs.length - i++);
+ 
+                if (!global.data.allUserID.includes(id)) {
+                    await Users.createData(id, { name: userName, data: {} });
+                    global.data.userName.set(id, userName);
+                    global.data.allUserID.push(id);
+                  console.log(`Có TVM ${nameArray}`)
+                }
+            }
+            memLength.sort((a, b) => a - b);
+      var getData = await Users.getData(event.author)
+var nameAuthor = typeof getData.name == "undefined" ? "Người dùng tự vào" : getData.name
+          	var background = [`${link}`];
+    var rd = background[Math.floor(Math.random() * background.length)];
+    let getAvtmot = (
+    await axios.get(`https://graph.facebook.com/${iduser}/picture?height=1500&width=1500&access_token=463372798834978|csqGyA8VWtIhabZZt-yhEBStl9Y`,
+      { responseType: "arraybuffer" }
+    )
+  ).data;
+  fs.writeFileSync(pathAvt1, Buffer.from(getAvtmot, "utf-8"));     
+		ben = await this.circle(pathAvt1);
+ 
+//let ben2 = (
+    //await axios.get(`https://graph.facebook.com/${event.author}/picture?height=1500&width=1500&access_token=463372798834978|csqGyA8VWtIhabZZt-yhEBStl9Y`,
+      //{ responseType: "arraybuffer" }
+    //)
+ // ).data;
+  //fs.writeFileSync(pathAvt2, Buffer.from(ben2, "utf-8"));
+ 
+//let box = (
+    //await axios.get(`${threadInfo.imageSrc}`,
+      //{ responseType: "arraybuffer" }
+    //)
+  //).data;
+  //fs.writeFileSync(pathbox, Buffer.from(box, "utf-8"));				
+  let getbackground = (
+    await axios.get(`${rd}`, {
+      responseType: "arraybuffer",
+    })
+  ).data;
+  fs.writeFileSync(pathImg, Buffer.from(getbackground, "utf-8"));
+ 
+    let baseImage = await loadImage(pathImg);
+    let baseAvt1 = await loadImage(ben);
+    //let baseAvt2 = await loadImage(pathAvt2);		
+    //let basebox = await loadImage(pathbox);   
+    let canvas = createCanvas(baseImage.width, baseImage.height);
+    let ctx = canvas.getContext("2d");
+    ctx.drawImage(baseImage, 0, 0, canvas.width, canvas.height);
+    ctx.drawImage(baseAvt1, 0, 0, 150, 150);          
+    //ctx.drawImage(basebox, 550, 76, 173, 95);	
+    //ctx.drawImage(baseAvt2, 550, 210, 175, 150);	
+    const imageBuffer = canvas.toBuffer();
+    fs.writeFileSync(pathImg, imageBuffer);
+    fs.removeSync(pathAvt1);  
+    //fs.removeSync(pathbox);
+    //fs.removeSync(pathAvt2);
+		api.sendMessage({body:`∘₊✧𝐖𝐞𝐥𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 ${threadName} 𝐖𝐢𝐭𝐡 𝐥𝐨𝐯𝐞✧₊∘\n𝐂𝐡à𝐨 𝐦ừ𝐧𝐠 ${nameArray}\n𝐁ạ𝐧 𝐥à 𝐭𝐡à𝐧𝐡 𝐯𝐢ê𝐧 𝐭𝐡ứ: ${memLength} 𝐂ủ𝐚 𝐧𝐡ó𝐦\nĐượ𝐜 𝐭𝐡ê𝐦 𝐯à𝐨 𝐛ở𝐢 ${nameAuthor}\n━━━━━━━━\n𝐍𝐠à𝐲 𝐯à𝐨 ${fullYear}\n𝐂𝐡ú𝐜 𝐁ạ𝐧 𝐌ộ𝐭 ${session} 𝐕𝐮𝐢 𝐕ẻ, 𝐕à𝐨 𝐛𝐨𝐱 𝐧𝐡ớ 𝐬𝐞𝐭 𝐁𝐃 𝐕à 𝐜𝐡ă𝐦 𝐭ươ𝐧𝐠 𝐭á𝐜 𝐤𝐡ô𝐧𝐠 𝐛ị đá 𝐫𝐚 𝐤𝐡ỏ𝐢 𝐧𝐡ó𝐦\n━━━━━━━━\n𝐋𝐢𝐧𝐤𝐟𝐛 𝐧𝐠ườ𝐢 𝐯à𝐨: \nhttps://www.facebook.com/${iduser}\n𝐋𝐢𝐧𝐤𝐟𝐛 𝐧𝐠ườ𝐢 𝐭𝐡ê𝐦: \nhttps://www.facebook.com/${event.author}`, attachment: fs.createReadStream(pathImg) }, event.threadID, () => fs.unlinkSync(pathImg));       
+        } catch (e) { return console.log(e) };
+    }
+                      }

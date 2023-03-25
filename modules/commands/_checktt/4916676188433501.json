@@ -1,0 +1,191 @@
+{
+    "total": [
+        {
+            "id": "100000284670465",
+            "count": 0
+        },
+        {
+            "id": "100000603861534",
+            "count": 0
+        },
+        {
+            "id": "100029198175178",
+            "count": 16
+        },
+        {
+            "id": "100037209184113",
+            "count": 88
+        },
+        {
+            "id": "100055900966155",
+            "count": 8
+        },
+        {
+            "id": "100068094188928",
+            "count": 119
+        },
+        {
+            "id": "100079086835283",
+            "count": 0
+        },
+        {
+            "id": "100082563831591",
+            "count": 0
+        },
+        {
+            "id": "100082636069559",
+            "count": 0
+        },
+        {
+            "id": "100084211062324",
+            "count": 0
+        },
+        {
+            "id": "100084991847341",
+            "count": 0
+        },
+        {
+            "id": "100085019851322",
+            "count": 0
+        },
+        {
+            "id": "100085770069244",
+            "count": 0
+        }
+    ],
+    "week": [
+        {
+            "id": "100000284670465",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100000603861534",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100029198175178",
+            "count": 0,
+            "name": "Nguyễn Hữu Thanh Hiền"
+        },
+        {
+            "id": "100037209184113",
+            "count": 0,
+            "name": "Đỗ Minh Thư"
+        },
+        {
+            "id": "100055900966155",
+            "count": 0,
+            "name": "Người dùng Facebook"
+        },
+        {
+            "id": "100068094188928",
+            "count": 0,
+            "name": "Hoàng Thị Thúy Vân"
+        },
+        {
+            "id": "100079086835283",
+            "count": 0,
+            "name": "Táo Táo"
+        },
+        {
+            "id": "100082563831591",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100082636069559",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100084211062324",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100084991847341",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100085019851322",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100085770069244",
+            "count": 0,
+            "name": "Người dùng facebook"
+        }
+    ],
+    "day": [
+        {
+            "id": "100000284670465",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100000603861534",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100029198175178",
+            "count": 0,
+            "name": "Nguyễn Hữu Thanh Hiền"
+        },
+        {
+            "id": "100037209184113",
+            "count": 0,
+            "name": "Đỗ Minh Thư"
+        },
+        {
+            "id": "100055900966155",
+            "count": 0,
+            "name": "Người dùng Facebook"
+        },
+        {
+            "id": "100068094188928",
+            "count": 0,
+            "name": "Hoàng Thị Thúy Vân"
+        },
+        {
+            "id": "100079086835283",
+            "count": 0,
+            "name": "Táo Táo"
+        },
+        {
+            "id": "100082563831591",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100082636069559",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100084211062324",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100084991847341",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100085019851322",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100085770069244",
+            "count": 0,
+            "name": "Người dùng facebook"
+        }
+    ],
+    "time": 6
+}

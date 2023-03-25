@@ -1,0 +1,174 @@
+{
+    "fishingrod": {
+        "rodType": 7,
+        "enchantRod": {},
+        "rodName": "ULTRA ULTIMATE FISHING ROD",
+        "cooldownTime": 5,
+        "durabilityDefault": 1000000000000000,
+        "durability": 999999999995617,
+        "moneyFix": 49472,
+        "rateBroken": [
+            1,
+            10000
+        ]
+    },
+    "inventory": [
+        {
+            "catch": "I caught a pike! Oh, yes, I like!",
+            "rarity": "Uncommon",
+            "price": 180,
+            "size": [
+                150,
+                165
+            ],
+            "time": [
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21
+            ]
+        },
+        {
+            "name": "Catfish",
+            "rarity": "Common",
+            "price": 80,
+            "size": [
+                59,
+                61
+            ],
+            "time": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23
+            ]
+        },
+        {
+            "name": "Black Bass",
+            "rarity": "Very Common",
+            "price": 40,
+            "size": [
+                50,
+                100
+            ],
+            "time": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23
+            ]
+        },
+        {
+            "name": "Puffer Fish",
+            "rarity": "Uncommon",
+            "price": 24,
+            "size": [
+                32,
+                38
+            ],
+            "time": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23
+            ]
+        },
+        {
+            "name": "Empty",
+            "size": 0,
+            "price": 0
+        },
+        {
+            "name": "Empty",
+            "size": 0,
+            "price": 0
+        },
+        {
+            "name": "Empty",
+            "size": 0,
+            "price": 0
+        },
+        {
+            "name": "Empty",
+            "size": 0,
+            "price": 0
+        },
+        {
+            "name": "Empty",
+            "size": 0,
+            "price": 0
+        }
+    ],
+    "lastTimeFishing": 1662998113,
+    "point": 324,
+    "totalMoney": 0,
+    "totalCatch": 4
+}

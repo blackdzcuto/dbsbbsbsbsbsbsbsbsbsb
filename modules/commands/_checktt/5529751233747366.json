@@ -1,0 +1,79 @@
+{
+    "total": [
+        {
+            "id": "100055900966155",
+            "count": 2
+        },
+        {
+            "id": "100077751584609",
+            "count": 6
+        },
+        {
+            "id": "100084004125359",
+            "count": 0
+        },
+        {
+            "id": "100084488422237",
+            "count": 2
+        },
+        {
+            "id": "100085864134962",
+            "count": 23
+        }
+    ],
+    "week": [
+        {
+            "id": "100055900966155",
+            "count": 0,
+            "name": "Người dùng Facebook"
+        },
+        {
+            "id": "100077751584609",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100084004125359",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100084488422237",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100085864134962",
+            "count": 0,
+            "name": "Ngọc Hoài"
+        }
+    ],
+    "day": [
+        {
+            "id": "100055900966155",
+            "count": 0,
+            "name": "Người dùng Facebook"
+        },
+        {
+            "id": "100077751584609",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100084004125359",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100084488422237",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100085864134962",
+            "count": 0,
+            "name": "Ngọc Hoài"
+        }
+    ],
+    "time": 6
+}

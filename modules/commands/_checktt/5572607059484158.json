@@ -1,0 +1,233 @@
+{
+    "total": [
+        {
+            "id": "100007880912635",
+            "count": 0
+        },
+        {
+            "id": "100018605363761",
+            "count": 54
+        },
+        {
+            "id": "100055054453460",
+            "count": 24
+        },
+        {
+            "id": "100065064856424",
+            "count": 0
+        },
+        {
+            "id": "100068094188928",
+            "count": 45
+        },
+        {
+            "id": "100071646763963",
+            "count": 0
+        },
+        {
+            "id": "100077407655150",
+            "count": 2
+        },
+        {
+            "id": "100078243196302",
+            "count": 27
+        },
+        {
+            "id": "100085506347334",
+            "count": 0
+        },
+        {
+            "id": "100085930770558",
+            "count": 0
+        },
+        {
+            "id": "100086157174632",
+            "count": 35
+        },
+        {
+            "id": "100087130026353",
+            "count": 12
+        },
+        {
+            "id": "100089007283497",
+            "count": 48
+        },
+        {
+            "id": "100087542436883",
+            "count": 40
+        },
+        {
+            "id": "100004436163060",
+            "count": 1
+        },
+        {
+            "id": "100050053005171",
+            "count": 10
+        }
+    ],
+    "week": [
+        {
+            "id": "100007880912635",
+            "count": 0,
+            "name": "Trần Anh Huy"
+        },
+        {
+            "id": "100018605363761",
+            "count": 4,
+            "name": "ZenKey XenJi"
+        },
+        {
+            "id": "100055054453460",
+            "count": 0,
+            "name": "Nguyenn Honng Hanhh"
+        },
+        {
+            "id": "100065064856424",
+            "count": 0,
+            "name": "Honng Haanh"
+        },
+        {
+            "id": "100068094188928",
+            "count": 5,
+            "name": "Hoàng Thị Thúy Vân"
+        },
+        {
+            "id": "100071646763963",
+            "count": 0,
+            "name": "Người dùng Facebook"
+        },
+        {
+            "id": "100077407655150",
+            "count": 0,
+            "name": "Lee Quynhh Anh"
+        },
+        {
+            "id": "100078243196302",
+            "count": 0,
+            "name": "Đào Lê Phương Thuỳ"
+        },
+        {
+            "id": "100085506347334",
+            "count": 0,
+            "name": "Anhh Quynh"
+        },
+        {
+            "id": "100085930770558",
+            "count": 0,
+            "name": "Honghanh Cutii"
+        },
+        {
+            "id": "100086157174632",
+            "count": 0,
+            "name": "Phan Ngọc Mỹ Dung"
+        },
+        {
+            "id": "100087130026353",
+            "count": 0,
+            "name": "Sátboiz Hhn"
+        },
+        {
+            "id": "100089007283497",
+            "count": 0,
+            "name": "Thiên Gia"
+        },
+        {
+            "id": "100087542436883",
+            "count": 4,
+            "name": "Naisu Mikano"
+        },
+        {
+            "id": "100004436163060",
+            "count": 0,
+            "name": "Trang T'ròn"
+        },
+        {
+            "id": "100050053005171",
+            "count": 1,
+            "name": "Dũng Trí"
+        }
+    ],
+    "day": [
+        {
+            "id": "100007880912635",
+            "count": 0,
+            "name": "Trần Anh Huy"
+        },
+        {
+            "id": "100018605363761",
+            "count": 9,
+            "name": "ZenKey XenJi"
+        },
+        {
+            "id": "100055054453460",
+            "count": 2,
+            "name": "Nguyenn Honng Hanhh"
+        },
+        {
+            "id": "100065064856424",
+            "count": 0,
+            "name": "Honng Haanh"
+        },
+        {
+            "id": "100068094188928",
+            "count": 21,
+            "name": "Hoàng Thị Thúy Vân"
+        },
+        {
+            "id": "100071646763963",
+            "count": 0,
+            "name": "Muội Nè"
+        },
+        {
+            "id": "100077407655150",
+            "count": 1,
+            "name": "Lee Quynhh Anh"
+        },
+        {
+            "id": "100078243196302",
+            "count": 8,
+            "name": "Đào Lê Phương Thuỳ"
+        },
+        {
+            "id": "100085506347334",
+            "count": 0,
+            "name": "Anhh Quynh"
+        },
+        {
+            "id": "100085930770558",
+            "count": 0,
+            "name": "Honghanh Cutii"
+        },
+        {
+            "id": "100086157174632",
+            "count": 1,
+            "name": "Phan Ngọc Mỹ Dung"
+        },
+        {
+            "id": "100087130026353",
+            "count": 0,
+            "name": "Sátboiz Hhn"
+        },
+        {
+            "id": "100089007283497",
+            "count": 3,
+            "name": "Thiên Gia"
+        },
+        {
+            "id": "100087542436883",
+            "count": 6,
+            "name": "Người dùng Facebook"
+        },
+        {
+            "id": "100004436163060",
+            "count": 0,
+            "name": "Trang T'ròn"
+        },
+        {
+            "id": "100050053005171",
+            "count": 8,
+            "name": "Dũng Trí"
+        }
+    ],
+    "time": 6
+}

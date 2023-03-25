@@ -1,0 +1,807 @@
+{
+    "total": [
+        {
+            "id": "1190686338",
+            "count": 136
+        },
+        {
+            "id": "100003005551763",
+            "count": 30
+        },
+        {
+            "id": "100026184510273",
+            "count": 0
+        },
+        {
+            "id": "100029252790037",
+            "count": 0
+        },
+        {
+            "id": "100038076347908",
+            "count": 1243
+        },
+        {
+            "id": "100040397443786",
+            "count": 2
+        },
+        {
+            "id": "100041648379935",
+            "count": 6
+        },
+        {
+            "id": "100041930602764",
+            "count": 0
+        },
+        {
+            "id": "100053181485195",
+            "count": 0
+        },
+        {
+            "id": "100054582870194",
+            "count": 0
+        },
+        {
+            "id": "100057204375903",
+            "count": 0
+        },
+        {
+            "id": "100068094188928",
+            "count": 740
+        },
+        {
+            "id": "100068922550220",
+            "count": 0
+        },
+        {
+            "id": "100073860351769",
+            "count": 0
+        },
+        {
+            "id": "100074275185307",
+            "count": 0
+        },
+        {
+            "id": "100075216974231",
+            "count": 918
+        },
+        {
+            "id": "100078930248490",
+            "count": 0
+        },
+        {
+            "id": "100079215463749",
+            "count": 178
+        },
+        {
+            "id": "100079240436969",
+            "count": 20
+        },
+        {
+            "id": "100079471586993",
+            "count": 1
+        },
+        {
+            "id": "100079932255011",
+            "count": 7
+        },
+        {
+            "id": "100080035848167",
+            "count": 0
+        },
+        {
+            "id": "100080384102065",
+            "count": 158
+        },
+        {
+            "id": "100080674022685",
+            "count": 95
+        },
+        {
+            "id": "100080822302667",
+            "count": 0
+        },
+        {
+            "id": "100081008334443",
+            "count": 0
+        },
+        {
+            "id": "100081816424263",
+            "count": 0
+        },
+        {
+            "id": "100081956092631",
+            "count": 3
+        },
+        {
+            "id": "100082241647519",
+            "count": 16
+        },
+        {
+            "id": "100083478198494",
+            "count": 394
+        },
+        {
+            "id": "100083916319039",
+            "count": 9
+        },
+        {
+            "id": "100084340227592",
+            "count": 0
+        },
+        {
+            "id": "100086731851572",
+            "count": 0
+        },
+        {
+            "id": "100086794674434",
+            "count": 43
+        },
+        {
+            "id": "100055900966155",
+            "count": 309
+        },
+        {
+            "id": "100078357362504",
+            "count": 1
+        },
+        {
+            "id": "100072900513635",
+            "count": 209
+        },
+        {
+            "id": "100085185913015",
+            "count": 122
+        },
+        {
+            "id": "100072492375370",
+            "count": 55
+        },
+        {
+            "id": "100050703674648",
+            "count": 43
+        },
+        {
+            "id": "100050537867811",
+            "count": 40
+        },
+        {
+            "id": "100061109995498",
+            "count": 184
+        },
+        {
+            "id": "100055441909762",
+            "count": 10
+        },
+        {
+            "id": "100080780507989",
+            "count": 8
+        },
+        {
+            "id": "100033751985199",
+            "count": 399
+        },
+        {
+            "id": "100053329613363",
+            "count": 2
+        },
+        {
+            "id": "100060268830536",
+            "count": 10
+        },
+        {
+            "id": "100077578808028",
+            "count": 3
+        },
+        {
+            "id": "100085864134962",
+            "count": 554
+        },
+        {
+            "id": "100081253442388",
+            "count": 282
+        },
+        {
+            "id": "100080329397236",
+            "count": 81
+        },
+        {
+            "id": "100071518096034",
+            "count": 80
+        },
+        {
+            "id": "100014888280713",
+            "count": 4
+        },
+        {
+            "id": "100087153136886",
+            "count": 5
+        },
+        {
+            "id": "100087440924049",
+            "count": 44
+        },
+        {
+            "id": "100080048052266",
+            "count": 35
+        },
+        {
+            "id": "100067603154302",
+            "count": 1
+        }
+    ],
+    "week": [
+        {
+            "id": "1190686338",
+            "count": 0,
+            "name": "Huy Lê"
+        },
+        {
+            "id": "100003005551763",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100026184510273",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100029252790037",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100038076347908",
+            "count": 0,
+            "name": "Vinhcong Trương"
+        },
+        {
+            "id": "100040397443786",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100041648379935",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100041930602764",
+            "count": 0,
+            "name": "Ebe Tngoc"
+        },
+        {
+            "id": "100053181485195",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100054582870194",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100057204375903",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100068094188928",
+            "count": 0,
+            "name": "Hoàng Thị Thúy Vân"
+        },
+        {
+            "id": "100068922550220",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100073860351769",
+            "count": 0,
+            "name": "Bánh Trứng Muối"
+        },
+        {
+            "id": "100074275185307",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100075216974231",
+            "count": 0,
+            "name": "Bee Thị"
+        },
+        {
+            "id": "100078930248490",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100079215463749",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100079240436969",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100079471586993",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100079932255011",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100080035848167",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100080384102065",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100080674022685",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100080822302667",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100081008334443",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100081816424263",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100081956092631",
+            "count": 0,
+            "name": "Thuyvy Depzai"
+        },
+        {
+            "id": "100082241647519",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100083478198494",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100083916319039",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100084340227592",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100086731851572",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100086794674434",
+            "count": 0,
+            "name": "𓂄𓆩𑁍𓆪𓂁Tao Bóp Ngực Em Hai Ka Ba 𓀁 Ở Trong Hotel Địt Hai Ba Em Ấy Đến Sức Lực Tao Dần Khô Héo 𓅮 Thấy Tao Được Lên Dài Ông Quan Tòa Ổng Phán Mười Năm Thế Là Tao Đi Tù 𓄃 Ở Trong Đó Đéo Có Người Thăm Ngày Qua Ngày 𓆤 Tao Đếm Lịch Hết Cuốn Này Tới Cuốn Kia 𓆦 Tao Muốn Được Giảm Án Nhanh Ra Ngoài Để Còn Được Uống Bia 𓅓 Tao Không Phải Thay Ma Nhưng Cai Ngục Gọi Là U Hồn 𓆘 Tao Đã C"
+        },
+        {
+            "id": "100055900966155",
+            "count": 0,
+            "name": "Người dùng Facebook"
+        },
+        {
+            "id": "100078357362504",
+            "count": 0,
+            "name": "Cẩmm Tú"
+        },
+        {
+            "id": "100072900513635",
+            "count": 0,
+            "name": "Huy Hoàng"
+        },
+        {
+            "id": "100085185913015",
+            "count": 0,
+            "name": "Ebe Quân"
+        },
+        {
+            "id": "100072492375370",
+            "count": 0,
+            "name": "Lê Đạt Duy"
+        },
+        {
+            "id": "100050703674648",
+            "count": 0,
+            "name": "Huy Hoàng"
+        },
+        {
+            "id": "100050537867811",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100061109995498",
+            "count": 0,
+            "name": "Anhh Ngoc"
+        },
+        {
+            "id": "100055441909762",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100080780507989",
+            "count": 0,
+            "name": "ʚNguyễn H.Anhɞ"
+        },
+        {
+            "id": "100033751985199",
+            "count": 0,
+            "name": "Châu Minh Trí"
+        },
+        {
+            "id": "100053329613363",
+            "count": 0,
+            "name": "Phan Thị Bảo Trân"
+        },
+        {
+            "id": "100060268830536",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100077578808028",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100085864134962",
+            "count": 0,
+            "name": "Ngọc Hoài"
+        },
+        {
+            "id": "100081253442388",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100080329397236",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100071518096034",
+            "count": 0,
+            "name": "Ma'hacker Zay"
+        },
+        {
+            "id": "100014888280713",
+            "count": 0,
+            "name": "Vũ Hoàng Bảo Khang"
+        },
+        {
+            "id": "100087153136886",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100087440924049",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100080048052266",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100067603154302",
+            "count": 0,
+            "name": "Người dùng facebook"
+        }
+    ],
+    "day": [
+        {
+            "id": "1190686338",
+            "count": 0,
+            "name": "Huy Lê"
+        },
+        {
+            "id": "100003005551763",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100026184510273",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100029252790037",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100038076347908",
+            "count": 0,
+            "name": "Vinhcong Trương"
+        },
+        {
+            "id": "100040397443786",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100041648379935",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100041930602764",
+            "count": 0,
+            "name": "Ebe Tngoc"
+        },
+        {
+            "id": "100053181485195",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100054582870194",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100057204375903",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100068094188928",
+            "count": 0,
+            "name": "Hoàng Thị Thúy Vân"
+        },
+        {
+            "id": "100068922550220",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100073860351769",
+            "count": 0,
+            "name": "Bánh Trứng Muối"
+        },
+        {
+            "id": "100074275185307",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100075216974231",
+            "count": 0,
+            "name": "Bee Thị"
+        },
+        {
+            "id": "100078930248490",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100079215463749",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100079240436969",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100079471586993",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100079932255011",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100080035848167",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100080384102065",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100080674022685",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100080822302667",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100081008334443",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100081816424263",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100081956092631",
+            "count": 0,
+            "name": "Thuyvy Depzai"
+        },
+        {
+            "id": "100082241647519",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100083478198494",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100083916319039",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100084340227592",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100086731851572",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100086794674434",
+            "count": 0,
+            "name": "𓂄𓆩𑁍𓆪𓂁Tao Bóp Ngực Em Hai Ka Ba 𓀁 Ở Trong Hotel Địt Hai Ba Em Ấy Đến Sức Lực Tao Dần Khô Héo 𓅮 Thấy Tao Được Lên Dài Ông Quan Tòa Ổng Phán Mười Năm Thế Là Tao Đi Tù 𓄃 Ở Trong Đó Đéo Có Người Thăm Ngày Qua Ngày 𓆤 Tao Đếm Lịch Hết Cuốn Này Tới Cuốn Kia 𓆦 Tao Muốn Được Giảm Án Nhanh Ra Ngoài Để Còn Được Uống Bia 𓅓 Tao Không Phải Thay Ma Nhưng Cai Ngục Gọi Là U Hồn 𓆘 Tao Đã C"
+        },
+        {
+            "id": "100055900966155",
+            "count": 0,
+            "name": "Người dùng Facebook"
+        },
+        {
+            "id": "100078357362504",
+            "count": 0,
+            "name": "Cẩmm Tú"
+        },
+        {
+            "id": "100072900513635",
+            "count": 0,
+            "name": "Huy Hoàng"
+        },
+        {
+            "id": "100085185913015",
+            "count": 0,
+            "name": "Ebe Quân"
+        },
+        {
+            "id": "100072492375370",
+            "count": 0,
+            "name": "Lê Đạt Duy"
+        },
+        {
+            "id": "100050703674648",
+            "count": 0,
+            "name": "Huy Hoàng"
+        },
+        {
+            "id": "100050537867811",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100061109995498",
+            "count": 0,
+            "name": "Anhh Ngoc"
+        },
+        {
+            "id": "100055441909762",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100080780507989",
+            "count": 0,
+            "name": "ʚNguyễn H.Anhɞ"
+        },
+        {
+            "id": "100033751985199",
+            "count": 0,
+            "name": "Châu Minh Trí"
+        },
+        {
+            "id": "100053329613363",
+            "count": 0,
+            "name": "Phan Thị Bảo Trân"
+        },
+        {
+            "id": "100060268830536",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100077578808028",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100085864134962",
+            "count": 0,
+            "name": "Ngọc Hoài"
+        },
+        {
+            "id": "100081253442388",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100080329397236",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100071518096034",
+            "count": 0,
+            "name": "Ma'hacker Zay"
+        },
+        {
+            "id": "100014888280713",
+            "count": 0,
+            "name": "Vũ Hoàng Bảo Khang"
+        },
+        {
+            "id": "100087153136886",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100087440924049",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100080048052266",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100067603154302",
+            "count": 0,
+            "name": "Người dùng facebook"
+        }
+    ],
+    "time": 6
+}

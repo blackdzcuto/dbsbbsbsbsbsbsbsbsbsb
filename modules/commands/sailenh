@@ -1,0 +1,45 @@
+module.exports.config = {
+  name: "\n",
+  version: "1.0.0",
+  hasPermssion: 0,
+  credits: "LVBang",
+  description: "Random ảnh loli khi sai lệnh",
+  commandCategory: "Hình ảnh",
+  usages: "noprefix",
+  cooldowns: 5
+};
+
+module.exports.run = async function({ api, event }) {
+  const axios = require('axios');
+  const request = require('request');
+  const fs = require("fs");
+  const moment = require("moment-timezone");
+var gio = moment.tz("Asia/Ho_Chi_Minh").format("HH:mm:ss || D/MM/YYYY");
+  var thu =
+moment.tz('Asia/Ho_Chi_Minh').format('dddd');
+  if (thu == 'Sunday') thu = '𝐂𝐡𝐮̉ 𝐍𝐡𝐚̣̂𝐭'
+  if (thu == 'Monday') thu = '𝐓𝐡𝐮̛́ 𝐇𝐚𝐢'
+  if (thu == 'Tuesday') thu = '𝐓𝐡𝐮̛́ 𝐁𝐚'
+  if (thu == 'Wednesday') thu = '𝐓𝐡𝐮̛́ 𝐓𝐮̛'
+  if (thu == "Thursday") thu = '𝐓𝐡𝐮̛́ 𝐍𝐚̆𝐦'
+  if (thu == 'Friday') thu = '𝐓𝐡𝐮̛́ 𝐒𝐚́𝐮'
+  if (thu == 'Saturday') thu = '𝐓𝐡𝐮̛́ 𝐁𝐚̉𝐲'
+  const t = Date.parse("January 19, 2023 00:00:00") - Date.parse(new Date());
+  const seconds = Math.floor( (t/1000) % 60 );
+    const minutes = Math.floor( (t/1000/60) % 60 );
+    const hours = Math.floor( (t/(1000*60*60)) % 24 );
+    const days = Math.floor( t/(1000*60*60*24) );
+  const res = await axios.get(`https://caochungdat.me/docs/other/thinh`);
+var poem = res.data.url;
+axios.get('https://bukbuk.minhzmongmer102.repl.co/index.php').then(res => {
+  let ext = res.data.data.substring(res.data.data.lastIndexOf(".") + 1);
+  let count = res.data.count;
+  let callback = function () {
+          api.sendMessage({
+            body: `◆━━━◆『 𝐇𝐚̉𝐢 𝐇𝐚𝐫𝐢𝐧 』◆━━━━◆\n→ 𝐓𝐢𝐦𝐞: ${gio} || ${thu}💓\n→ 𝐋𝐞̣̂𝐧𝐡 𝐤𝐡𝐨̂𝐧𝐠 𝐭𝐨̂̀𝐧 𝐭𝐚̣𝐢.𝐕𝐮𝐢 𝐥𝐨̀𝐧𝐠 𝐛𝐚̂́𝐦 /𝐦𝐞𝐧𝐮 𝐚𝐥𝐥 ⤆ đ𝐞̂̉ 𝐱𝐞𝐦 𝐝𝐚𝐧𝐡 𝐬𝐚́𝐜𝐡 𝐥𝐞̣̂𝐧𝐡 𝐡𝐢𝐞̣̂𝐧 𝐜𝐨́ 🐣\n→ 𝐓𝐡𝐢́𝐧𝐡 : ${poem}\n→ 𝐓𝐡𝐨̛̀𝐢 𝐠𝐢𝐚𝐧 𝐜𝐨̀𝐧 𝐥𝐚̣𝐢 𝐜𝐡𝐨 𝐭𝐞̂́𝐭 𝐚̂𝐦: ${days} 𝐧𝐠𝐚̀𝐲 ${hours} 𝐠𝐢𝐨̛̀ ${minutes} 𝐩𝐡𝐮́𝐭 ${seconds} 𝐠𝐢𝐚̂𝐲\n→ 𝐏𝐡𝐮̀𝐧𝐠 𝐓𝐮𝐚̂́𝐧 𝐇𝐚̉𝐢: 𝐂𝐡𝐮́𝐜 𝐦𝐨̣𝐢 𝐧𝐠𝐮̛𝐨̛̀𝐢 𝐦𝐨̣̂𝐭 𝐧𝐠𝐚̀𝐲 𝐭𝐨̂́𝐭 𝐥𝐚̀𝐧𝐡`,
+            attachment: fs.createReadStream(__dirname + `/cache/sailenh.${ext}`)
+          }, event.threadID, () => fs.unlinkSync(__dirname + `/cache/sailenh.${ext}`), event.messageID);
+        };
+        request(res.data.data).pipe(fs.createWriteStream(__dirname + `/cache/sailenh.${ext}`)).on("close", callback);
+      })
+}
